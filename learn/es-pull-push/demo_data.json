@@ -1,0 +1,62 @@
+[
+    {
+        "_index": "test-index",
+        "_type": "authors",
+        "_id": 1,
+        "_source": {
+            "author": "Chestermo",
+            "gender": "male",
+            "age": 24,
+            "body_fat": "15%",
+            "interest": [
+                "couch potato",
+                "eat and sleep"
+            ]
+        }
+    },
+    {
+        "_index": "test-index",
+        "_type": "authors",
+        "_id": 2,
+        "_source": {
+            "author": "Lydia",
+            "gender": "female",
+            "age": 18,
+            "body_fat": "20%",
+            "interest": [
+                "gym",
+                "make up"
+            ]
+        }
+    },
+    {
+        "_index": "test-index",
+        "_type": "authors",
+        "_id": 3,
+        "_source": {
+            "author": "Alice",
+            "gender": "Female",
+            "age": 22,
+            "body_fat": "25%",
+            "interest": [
+                "movies",
+                "chating with friends"
+            ]
+        }
+    },
+    {
+        "_index": "test-index",
+        "_type": "authors",
+        "_id": 4,
+        "_source": {
+            "author": "Ken",
+            "gender": "male",
+            "age": 26,
+            "body_fat": "21%",
+            "interest": [
+                "eating",
+                "pretend as fat and merge with the couch"
+            ]
+        }
+    }
+]

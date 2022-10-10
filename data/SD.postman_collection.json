@@ -1,0 +1,207 @@
+{
+	"info": {
+		"_postman_id": "62acf80d-eee4-4d80-bf6b-c1372ea0c90d",
+		"name": "SD",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "428359"
+	},
+	"item": [
+		{
+			"name": "Employee",
+			"item": [
+				{
+					"name": "Get All Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Employee By ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees/777",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"777"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees/12345",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"12345"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Employee By ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees/12345",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"12345"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Employees",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Bulk Employees",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[{\r\n\t\t\"Employee Name\": \"James Bond\",\r\n\t\t\"Gender\": \"M\",\r\n\t\t\"HRID\": 777,\r\n\t\t\"Earth Employee ID\": \"james.bond\",\r\n\t\t\"Login XP ID\": \"jbond\",\r\n\t\t\"HR Status\": null,\r\n\t\t\"Last Date Worked\": null,\r\n\t\t\"Mobile (Personal)\": 1234567891,\r\n\t\t\"Mobile (Alt)\": 1234567891,\r\n\t\t\"Primary Residence\": \"London\",\r\n\t\t\"First Start Date\": 831081600000,\r\n\t\t\"Last Start Date\": null,\r\n\t\t\"XX2\": null,\r\n\t\t\"XX2 Descr\": null,\r\n\t\t\"XX3\": null,\r\n\t\t\"XX3 Descr\": null,\r\n\t\t\"Cost Centre\": null,\r\n\t\t\"CC Descr\": null,\r\n\t\t\"Corporate Title\": \"Associate\",\r\n\t\t\"Functional Title\": \"Lead Agent\",\r\n\t\t\"Primary Manager Name\": \"M\",\r\n\t\t\"Primary Manager Email ID\": \"ac@n.com\",\r\n\t\t\"Primary Manager HR ID\": 56789,\r\n\t\t\"Secondary Manager Name\": \"TC\",\r\n\t\t\"Seconday Manager Email ID\": \"tc@n.com\",\r\n\t\t\"Seconday Manager HR ID\": 14526,\r\n\t\t\"Vendor Type\": null,\r\n\t\t\"Job Code Descr\": null,\r\n\t\t\"Vendor Name\": null,\r\n\t\t\"Organizational Relationship\": null\r\n\t},\r\n\t{\r\n\t\t\"Employee Name\": \"Halle Berry\",\r\n\t\t\"Gender\": \"F\",\r\n\t\t\"HRID\": 111,\r\n\t\t\"Earth Employee ID\": \"halle.berry\",\r\n\t\t\"Login XP ID\": \"hberry\",\r\n\t\t\"HR Status\": null,\r\n\t\t\"Last Date Worked\": null,\r\n\t\t\"Mobile (Personal)\": 1987654321,\r\n\t\t\"Mobile (Alt)\": 1987654321,\r\n\t\t\"Primary Residence\": \"NY\",\r\n\t\t\"First Start Date\": 831081600000,\r\n\t\t\"Last Start Date\": null,\r\n\t\t\"XX2\": null,\r\n\t\t\"XX2 Descr\": null,\r\n\t\t\"XX3\": null,\r\n\t\t\"XX3 Descr\": null,\r\n\t\t\"Cost Centre\": null,\r\n\t\t\"CC Descr\": null,\r\n\t\t\"Corporate Title\": \"Associate\",\r\n\t\t\"Functional Title\": \"Lead Agent\",\r\n\t\t\"Primary Manager Name\": \"M\",\r\n\t\t\"Primary Manager Email ID\": \"ac@n.com\",\r\n\t\t\"Primary Manager HR ID\": 56789,\r\n\t\t\"Secondary Manager Name\": \"TC\",\r\n\t\t\"Seconday Manager Email ID\": \"tc@n.com\",\r\n\t\t\"Seconday Manager HR ID\": 14526,\r\n\t\t\"Vendor Type\": null,\r\n\t\t\"Job Code Descr\": null,\r\n\t\t\"Vendor Name\": null,\r\n\t\t\"Organizational Relationship\": null\r\n\r\n\t}\r\n]"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees/bulk",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"bulk"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Single Employee",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\t\"Employee Name\": \"James Bond\",\r\n\t\t\"Gender\": \"M\",\r\n\t\t\"HRID\": 777,\r\n\t\t\"Earth Employee ID\": \"james.bond\",\r\n\t\t\"Login XP ID\": \"jbond\",\r\n\t\t\"HR Status\": null,\r\n\t\t\"Last Date Worked\": null,\r\n\t\t\"Mobile (Personal)\": 1234567891,\r\n\t\t\"Mobile (Alt)\": 1234567891,\r\n\t\t\"Primary Residence\": \"London\",\r\n\t\t\"First Start Date\": 831081600000,\r\n\t\t\"Last Start Date\": null,\r\n\t\t\"XX2\": null,\r\n\t\t\"XX2 Descr\": null,\r\n\t\t\"XX3\": null,\r\n\t\t\"XX3 Descr\": null,\r\n\t\t\"Cost Centre\": null,\r\n\t\t\"CC Descr\": null,\r\n\t\t\"Corporate Title\": \"Associate\",\r\n\t\t\"Functional Title\": \"Lead Agent\",\r\n\t\t\"Primary Manager Name\": \"M\",\r\n\t\t\"Primary Manager Email ID\": \"ac@n.com\",\r\n\t\t\"Primary Manager HR ID\": 56789,\r\n\t\t\"Secondary Manager Name\": \"TC\",\r\n\t\t\"Seconday Manager Email ID\": \"tc@n.com\",\r\n\t\t\"Seconday Manager HR ID\": 14526,\r\n\t\t\"Vendor Type\": null,\r\n\t\t\"Job Code Descr\": null,\r\n\t\t\"Vendor Name\": null,\r\n\t\t\"Organizational Relationship\": null\r\n\t}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:5000/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
